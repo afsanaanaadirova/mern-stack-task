@@ -1,0 +1,85 @@
+ body{
+   background: #12c2e9;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ 
+ .audience-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 20px 30px;
+  }
+
+  .our-card-top {
+    position: relative;
+  }
+  
+  .our-custom-input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .our-custom-input-interior {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  .form-audience--title{
+    text-transform: upperCase;
+  }
+  .form-audience{
+    background: linear-gradient(120deg, rgba(239, 239, 239, 0.60) 0%, rgba(255, 255, 255, 0.10) 100%); 
+    border-radius: 25px; 
+    border: 1px #EFEFEF solid; 
+    backdrop-filter: blur(60px);
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .form-audience--item{
+    background: #fff;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 2px 4px 3px #ccc;
+    padding: 10px 0;
+    margin-bottom: 3rem!important;
+  }
+
+  .form-control{
+    border: unset;
+    border-bottom: 1px solid;
+    border-radius: unset;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .form-control:focus{
+    box-shadow: unset!important;
+  }
+
+  .card-body p{
+    font-weight: 700;
+   }
+
+  .card-body span{
+     display: block;
+     font-weight: 400;
+  }
+
+  .danger-alert{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    transform: all .5s;
+  }
+
+  
