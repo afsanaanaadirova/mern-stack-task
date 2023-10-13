@@ -79,7 +79,25 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
-    transform: all .5s;
+    transition: all .5s;
   }
 
   
+  @media (max-width: 768px) {
+    .audience-grid {
+      grid-template-columns: unset;
+    }
+    .form-audience--item{
+      width: 100%;
+   }
+   .alert-heading {
+    color: inherit;
+    font-size: 12px;
+    margin-bottom: unset;
+  }
+  .danger-alert {
+    bottom: unset;
+    top: 16px;
+    padding: 10px;
+  }
+}  

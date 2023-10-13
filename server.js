@@ -14,6 +14,10 @@ app.use(express.static("public"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
+app.get("/", async (req, res) => {
+  res.render("home")
+})
+
 function passwordProtected(req, res, next) {
   res.set("WWW-Authenticate", "Basic realm='Our MERN App'")
   if (req.headers.authorization == "Basic YWRtaW46YWRtaW4=") {
@@ -24,10 +28,6 @@ function passwordProtected(req, res, next) {
   }
 }
 app.use(passwordProtected)
-
-app.get("/", async (req, res) => {
-  res.render("home")
-})
 
 app.get("/admin", (req, res) => {
   res.render("admin")
